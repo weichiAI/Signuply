@@ -1,0 +1,12 @@
+{
+  "buildCommand": "vite build",
+  "outputDirectory": "dist/client",
+  "nodeVersion": "22.11.0",
+  "cloudFunctions": {
+    "nodejs": {
+      "externalNodeModules": ["better-sqlite3"],
+      "includeFiles": [".data/**"],
+      "maxDuration": 60
+    }
+  }
+}
